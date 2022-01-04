@@ -14,7 +14,7 @@ with io.open(
     exec(f.read(), about)
 
 setup(
-    name="tutor-contrib-notes",
+    name="tutor-notes",
     version=about["__version__"],
     url="https://docs.tutor.overhang.io/",
     project_urls={
