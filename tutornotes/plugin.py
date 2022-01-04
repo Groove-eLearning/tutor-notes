@@ -14,7 +14,7 @@ config = {
     },
     "defaults": {
         "VERSION": __version__,
-        "DOCKER_IMAGE": "{{ DOCKER_REGISTRY }}overhangio/openedx-notes:{{ NOTES_VERSION }}",
+        "DOCKER_IMAGE": "{{ DOCKER_REGISTRY }}edutechdev/openedx-notes:{{ NOTES_VERSION }}",
         "HOST": "notes.{{ LMS_HOST }}",
         "MYSQL_DATABASE": "notes",
         "MYSQL_USERNAME": "notes",

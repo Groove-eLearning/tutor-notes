@@ -11,7 +11,7 @@ ARG APP_USER_ID=1000
 RUN useradd --home-dir /app --create-home --shell /bin/bash --uid ${APP_USER_ID} app
 USER ${APP_USER_ID}
 
-RUN git clone https://github.com/edx/edx-notes-api --branch {{ OPENEDX_COMMON_VERSION }} --depth 1 /app/edx-notes-api
+RUN git clone https://github.com/Groove-eLearning/edx-notes-api --branch {{ OPENEDX_COMMON_VERSION }} --depth 1 /app/edx-notes-api
 WORKDIR /app/edx-notes-api
 
 RUN python -m venv /app/venv
